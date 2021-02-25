@@ -4,8 +4,8 @@
   --header-height: 3rem;
 
   /* colors */
-  --primary-color: #4070f4;
-  --secondary-color: #0e2471;
+  --primary-color: #3263eb;
+  --secondary-color: #3a477c;
 
   /* fonts */
   --body-font: "Quicksand", sans-serif;
@@ -131,7 +131,7 @@ img {
     .nav_menu {
         position: fixed;
         top: var(--header-height);
-        right: 0;
+        right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
@@ -183,5 +183,7 @@ img {
     background-color: var(--primary-color); 
 }
 
-
+.show {
+    right: 0
+}
 
