@@ -1,3 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+  --header-height: 3rem;
+
+  /* colors */
+  --primary-color: #4070f4;
+  --secondary-color: #0e2471;
+
+  /* fonts */
+  --body-font: "Quicksand", sans-serif;
+  --big-font: 2rem;
+  --normal-font: 1rem;
+  --medium-font: 1.3rem;
+
+  /* margins */
+  --margin-bottom-1: 0.5rem;
+  --margin-bottom-2: 1rem;
+  --margin-bottom-3: 1.5rem;
+  --margin-bottom-4: 2rem;
+  --margin-bottom-5: 2.5rem;
+  --margin-bottom-6: 3rem;
+
+  /* z - index */
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+}
+
+*,::before, ::after{
+    box-sizing: border-box;
+} 
 
 
+@media screen and (min-width: 768px) {
+  :root {
+    --body-font: "Quicksand", sans-serif;
+    --big-font: 3.5rem;
+    --normal-font: 1rem;
+    --medium-font: 2rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+    color: var(--secondary-color);
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.section-title {
+    position: relative;
+    font-size: var(--medium-font);
+    color: var(--primary-color);
+    margin-top: var(--margin-bottom-2);
+    margin-bottom: var(--margin-bottom-4);
+    text-align: center;
+}
+
+.section-title::after {
+    position:absolute;
+    content: "";
+    width: 64px;
+    height: 0.2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--primary-color);
+}
