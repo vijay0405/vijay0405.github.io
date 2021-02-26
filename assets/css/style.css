@@ -6,14 +6,14 @@
 
 
   /* colors */
-  --primary-color: #4070f4;
+  --primary-color: #ffb9ad;
   --secondary-color: #0e2431;
 
   /* fonts */
-  --body-font: "Quicksand", sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --big-font: 2rem;
-  --normal-font: 1rem;
-  --medium-font: 1.3rem;
+  --normal-font: 0.94rem;
+  --medium-font: 1.25rem;
 
   /* margins */
   --margin-bottom-1: 0.5rem;
@@ -465,7 +465,7 @@ img {
 
     .home_img {
         width: 457px;
-        bottom: 15%;
+        bottom: 10%;
     }
 
     .about_container, .skills_container{
