@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
   --header-height: 3rem;
+  --font-semi: 600;
+
 
   /* colors */
-  --primary-color: #3263eb;
-  --secondary-color: #1b2f81;
+  --primary-color: #4070f4;
+  --secondary-color: #0e2431;
 
   /* fonts */
   --body-font: "Quicksand", sans-serif;
@@ -30,7 +32,7 @@
 
 @media screen and (min-width: 768px) {
   :root {
-    --body-font: "Quicksand", sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --big-font: 3.5rem;
     --normal-font: 1rem;
     --medium-font: 2rem;
@@ -127,7 +129,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
+  font-weight: var(--font-semi);
 }
 
 @media screen and (max-width: 768px) {
@@ -236,7 +238,7 @@ img {
   background-color: var(--primary-color);
   color: white;
   padding: 0.75rem 2.5rem;
-  font-weight: 600;
+  font-weight: var(--font-semi);
   border-radius: 0.5rem;
 }
 
@@ -281,7 +283,7 @@ img {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    font-weight: 600;
+    font-weight: var(--font-semi);
     padding: 0.5rem  1rem;
     margin-bottom: var(--margin-bottom-4);
     border-radius: .5rem;
@@ -359,7 +361,7 @@ img {
 .contact_input {
     width: 100%;
     font-size: var(--normal-font);
-    font-weight: 600;
+    font-weight: var(--font-semi);
     padding: 1rem;
     border-radius: 0.5rem;
     border: 1.5px solid var(--secondary-color);
@@ -381,7 +383,7 @@ img {
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--font-semi);
     padding: 2rem 0;
 }
 
