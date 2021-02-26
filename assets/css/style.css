@@ -377,5 +377,28 @@ img {
 }
 
 
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+.footer_title {
+    font-size: 2rem;
+    margin-bottom: var(--margin-bottom-4);
+}
+
+.footer_social {
+    margin-bottom: var(--margin-bottom-4);
+}
+
+.footer_icon {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 var(--margin-bottom-2)
+}
+
 
 
