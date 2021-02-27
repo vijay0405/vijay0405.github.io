@@ -42,7 +42,7 @@ sr.reveal('.about_text', {delay: 400})
 
 sr.reveal('.qualification_title', {})
 sr.reveal('.qualification_area', {delay:200})
-sr.reveal('.qualification_box', {delay:400})
+sr.reveal('.qualification_box', {delay:200})
 
 sr.reveal('.skills_subtitle', {})
 sr.reveal('.skills_text', {delay: 200})
