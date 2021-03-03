@@ -327,23 +327,39 @@ img {
 }
 
 .skills_html5{
-    width: 95%;
+    width: 90%;
 }
 
 .skills_javascript{
-    width: 95%;
+    width: 90%;
 }
 
 .skills_css{
-    width: 95%;
+    width: 85%;
 }
 
 .skills_angular{
-    width: 95%;
+    width: 85%;
 }
 
 .skills_nodejs{
-    width: 95%;
+    width: 90%;
+}
+
+.skills_ts{
+  width: 80%
+}
+
+.skills_java{
+  width: 75%;
+}
+
+.skills_flutter{
+  width: 80%;
+}
+
+.skills_python {
+  width: 85%;
 }
 
 .skills_img {
@@ -387,7 +403,7 @@ img {
   background: var(--secondary-color);
   opacity: 0.75;
   border-radius: 0.5rem;
-  transition: 0.35s
+  transition: 0.3s
 }
 
 .work_link {
@@ -537,6 +553,12 @@ img {
         align-items: center;
         text-align: initial;
     }
+
+    .skills_container_1{
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      text-align: initial;
+  }
 
     .about_img img {
         width: 300px;
