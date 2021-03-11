@@ -630,3 +630,7 @@ img {
   display: block;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
