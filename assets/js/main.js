@@ -83,10 +83,10 @@ const iconTheme = 'bx-sun'
 
 function updateImage(isDark) {
     if (isDark) {
-        document.getElementById("profile_image_1").src = "assets/img/profile6_dark.png";
+        document.getElementById("profile_image_1").src = "assets/img/profile6_dark.webp";
         document.getElementById("profile_image_2").src = "assets/img/profile4_dark.webp";
     } else {
-        document.getElementById("profile_image_1").src = "assets/img/profile6.png";
+        document.getElementById("profile_image_1").src = "assets/img/profile6.webp";
         document.getElementById("profile_image_2").src = "assets/img/profile4.webp";
     }
 }
