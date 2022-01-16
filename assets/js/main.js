@@ -91,7 +91,7 @@ function updateImage(isDark) {
     }
 }
 
-// Previously selected topic (if user selected)
+// Previously selected theme (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
@@ -99,9 +99,8 @@ const selectedIcon = localStorage.getItem('selected-icon')
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
-// We validate if the user previously chose a topic
+// We validate if the user previously chose a theme
 if (selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 
@@ -110,12 +109,29 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
     let isDarkToggled = document.body.classList.toggle(darkTheme)
     updateImage(isDarkToggled)
 
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+function setThemeTimePreference() {
+    let d = new Date();
+    let currHour = d.getHours();
+    if ( (currHour >= 19 || currHour <= 6) ) {
+        document.body.classList.add(darkTheme);
+        updateImage(true);
+        themeButton.classList.add(iconTheme)
+        console.log(`Changing theme to dark based on the current time.`)
+    } else {
+        document.body.classList.remove(darkTheme);
+        updateImage(false);
+        themeButton.classList.remove(iconTheme)
+        console.log(`Changing theme to light based on the current time.`)
+    }
+
+}
+
+setThemeTimePreference();
